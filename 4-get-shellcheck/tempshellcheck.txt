@@ -1,0 +1,170 @@
+
+In ../tempbash.sh line 8:
+readonly EXAMPLES_TEST=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+         ^-----------^ SC2155 (warning): Declare and assign separately to avoid masking return values.
+
+
+In ../tempbash.sh line 10:
+. ${EXAMPLES_TEST}/../gobash
+  ^--------------^ SC2086 (info): Double quote to prevent globbing and word splitting.
+
+Did you mean: 
+. "${EXAMPLES_TEST}"/../gobash
+
+
+In ../tempbash.sh line 18:
+        shift 1 || return $EC
+                          ^-^ SC2086 (info): Double quote to prevent globbing and word splitting.
+
+Did you mean: 
+        shift 1 || return "$EC"
+
+
+In ../tempbash.sh line 24:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 29:
+        _exet "$FUNCNAME" "--ignore"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 34:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 39:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 44:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 49:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 54:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 59:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 64:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 69:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 74:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 86:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 91:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 96:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 101:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 106:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 114:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 119:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 124:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 129:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 134:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 139:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 144:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 149:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 154:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 159:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 164:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 169:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+
+In ../tempbash.sh line 174:
+        _exet "$FUNCNAME"
+               ^-------^ SC2128 (warning): Expanding an array without an index only gives the first element.
+
+For more information:
+  https://www.shellcheck.net/wiki/SC2128 -- Expanding an array without an ind...
+  https://www.shellcheck.net/wiki/SC2155 -- Declare and assign separately to ...
+  https://www.shellcheck.net/wiki/SC2086 -- Double quote to prevent globbing ...
